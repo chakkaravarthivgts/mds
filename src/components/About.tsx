@@ -20,15 +20,15 @@ export function About() {
         >
           <p className="text-lg leading-relaxed mb-6">
             Midwood Design Studio was formed to provide a cohesive design vision
-            for Midwood's national portfolio, where all aspects of a commercial
-            or residential building's design can be conceptualized and
-            implemented.
+            for Midwood&apos;s national portfolio, where all aspects of a
+            commercial or residential building&apos;s design can be
+            conceptualized and implemented.
           </p>
 
           <p className="text-lg leading-relaxed mb-6">
             Midwood Design Studio also offers design consultation services for
             current or new tenants to meet various needs, including building out
-            various office or retail spaces in Midwood's properties.
+            various office or retail spaces in Midwood&apos;s properties.
           </p>
 
           <p
@@ -38,27 +38,27 @@ export function About() {
             Midwood Design Studio, an in-house interior design firm, is led by
             Shazia Shahid as Principal of Midwood Design Studio. Shahid joined
             Midwood in 2010 and, since then, has overseen the design of some of
-            the firm's most notable commercial and residential developments by
-            collaborating with top architects and designers.
+            the firm&apos;s most notable commercial and residential developments
+            by collaborating with top architects and designers.
           </p>
 
           <p
             className="text-lg leading-relaxed mb-6"
             style={{ letterSpacing: "0.004em" }}
           >
-            These notable projects include The Shops at Sportsmen's Lodge in
-            Studio City, Los Angeles, a 95,000-square-foot open-air community
+            These notable projects include The Shops at Sportsmen&apos;s Lodge
+            in Studio City, Los Angeles, a 95,000-square-foot open-air community
             gathering place that features top dining, shopping, and wellness
             tenants designed by Gensler; 150 East 78th Street, the sold-out
             luxury condominium development featuring architecture by
-            award-winning firm Robert A.M. Stern Architects on NYC's Upper East
-            Side; The Williams, a luxury residential and retail building in the
-            heart of Williamsburg, Brooklyn with architecture by Morris Adjmi
-            Architects; and a glass enclosed commercial building in the heart of
-            Center City Philadelphia, designed by award winning architectural
-            firm Bohlin Cywinski Jackson architects, who are known for their
-            many iconic buildings including Apple's glass cube store on 5th
-            Avenue in New York.
+            award-winning firm Robert A.M. Stern Architects on NYC&apos;s Upper
+            East Side; The Williams, a luxury residential and retail building in
+            the heart of Williamsburg, Brooklyn with architecture by Morris
+            Adjmi Architects; and a glass enclosed commercial building in the
+            heart of Center City Philadelphia, designed by award winning
+            architectural firm Bohlin Cywinski Jackson architects, who are known
+            for their many iconic buildings including Apple&apos;s glass cube
+            store on 5th Avenue in New York.
           </p>
 
           <p

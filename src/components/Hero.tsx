@@ -1,5 +1,3 @@
-import { Button } from "@/components/ui/button";
-
 export function Hero() {
   return (
     <section className="h-screen relative overflow-hidden pt-20">
