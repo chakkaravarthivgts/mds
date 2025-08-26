@@ -108,8 +108,9 @@ export function Nav() {
         </div>
 
         {/* Drawer Content */}
-        <div className="px-6 py-8">
-          <div className="space-y-8">
+        <div className="h-[calc(100%-88px)] px-6 pb-6 flex flex-col">
+          {/* Top: Navigation + Social */}
+          <div className="flex-1 overflow-y-auto pr-1 space-y-8">
             {/* Navigation Links */}
             <div className="space-y-4">
               <h3 className="text-white/60 text-sm font-medium uppercase tracking-wider">
@@ -134,28 +135,6 @@ export function Nav() {
                 >
                   Portfolio
                 </button>
-                <button
-                  onClick={() => scrollToSection("contact")}
-                  className="block text-white hover:text-white/80 transition-colors duration-200 text-lg font-medium text-left w-full"
-                >
-                  Contact
-                </button>
-              </div>
-            </div>
-
-            {/* Contact Info */}
-            <div className="space-y-4">
-              <h3 className="text-white/60 text-sm font-medium uppercase tracking-wider">
-                Contact
-              </h3>
-              <div className="space-y-2">
-                <p className="text-white/80 text-sm">
-                  210 S 12th St, Philadelphia, PA 19107
-                </p>
-                <p className="text-white/80 text-sm">
-                  info@midwooddesignstudio.com
-                </p>
-                <p className="text-white/80 text-sm">+1 (555) 123-4567</p>
               </div>
             </div>
 
@@ -178,6 +157,28 @@ export function Nav() {
                   <span className="text-white text-xs font-medium">IG</span>
                 </a>
               </div>
+            </div>
+          </div>
+
+          {/* Bottom: Contact pinned */}
+          <div className="pt-6 border-t border-white/10">
+            <h3 className="text-white/60 text-sm font-medium uppercase tracking-wider mb-3">
+              Contact
+            </h3>
+            <div className="space-y-2">
+              <p className="text-white/80 text-sm">
+                210 S 12th St, Philadelphia, PA 19107
+              </p>
+              <p className="text-white/80 text-sm">
+                info@midwooddesignstudio.com
+              </p>
+              <p className="text-white/80 text-sm">+1 (555) 123-4567</p>
+              <button
+                onClick={() => scrollToSection("contact")}
+                className="mt-3 w-full text-center text-white/90 hover:text-white bg-white/10 hover:bg-white/20 border border-white/20 rounded-md py-2 transition-colors"
+              >
+                Go to Contact
+              </button>
             </div>
           </div>
         </div>

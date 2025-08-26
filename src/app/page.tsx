@@ -22,11 +22,15 @@ export default function Home() {
   return (
     <div className="relative">
       <LoadingScreen isLoading={isLoading} />
-      <Nav />
-      <Hero />
-      <About />
-      <Portfolio />
-      <Contact />
+      <div
+        className={`transition-opacity duration-500 ${isLoading ? "opacity-0" : "opacity-100"}`}
+      >
+        <Nav />
+        <Hero />
+        <About />
+        <Portfolio />
+        <Contact />
+      </div>
     </div>
   );
 }

@@ -84,27 +84,30 @@ export function Portfolio() {
   const currentContent = portfolioData[activeTab];
 
   return (
-    <section id="portfolio" className="relative bg-white min-h-screen py-16">
-      <div className="max-w-[90rem] mx-auto px-6">
+    <section
+      id="portfolio"
+      className="relative bg-white min-h-screen py-12 sm:py-16"
+    >
+      <div className="max-w-[90rem] mx-auto px-4 sm:px-6">
         {/* PORTFOLIO Heading and Tabs */}
-        <div className="flex items-center justify-between mb-12">
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 sm:gap-0 mb-8 sm:mb-12">
           <h2
-            className="text-2xl font-normal text-black"
+            className="text-xl sm:text-2xl font-normal text-black"
             style={{ fontFamily: "Helvetica, Arial, sans-serif" }}
           >
             PORTFOLIO
           </h2>
 
           {/* Tab Navigation */}
-          <div className="flex items-center gap-8">
+          <div className="flex flex-wrap items-center gap-4 sm:gap-8">
             {portfolioData.map((tab, index) => (
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(index)}
-                className={`text-base font-medium transition-all duration-300 ${
+                className={`text-sm sm:text-base tracking-wide transition-colors duration-200 ${
                   activeTab === index
-                    ? "text-black border-b-2 border-black"
-                    : "text-gray-500 hover:text-black"
+                    ? "text-black"
+                    : "text-gray-400 hover:text-gray-600"
                 }`}
                 style={{
                   fontFamily: "Helvetica, Arial, sans-serif",
@@ -125,11 +128,11 @@ export function Portfolio() {
         </div>
 
         {/* Content Area */}
-        <div className="grid grid-cols-3 gap-12 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 items-start">
           {/* Text Content - 1/3 width */}
           <div className="col-span-1">
             <p
-              className="text-lg leading-relaxed text-black opacity-60"
+              className="text-base sm:text-lg leading-relaxed text-black opacity-60"
               style={{
                 fontFamily: "Helvetica, Arial, sans-serif",
                 letterSpacing: "-0.076em",
@@ -140,11 +143,11 @@ export function Portfolio() {
           </div>
 
           {/* Image Grid - 2/3 width with arrows */}
-          <div className="col-span-2 relative">
+          <div className="col-span-1 md:col-span-2 relative mt-6 md:mt-0">
             {/* Left Arrow */}
             <button
               onClick={prevTab}
-              className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-16 z-10 p-3 bg-white/80 backdrop-blur-sm rounded-full shadow-lg hover:bg-white transition-all duration-300 border border-gray-200"
+              className="hidden md:flex absolute left-0 top-1/2 -translate-y-1/2 -translate-x-6 lg:-translate-x-16 z-10 p-3 bg-white/80 backdrop-blur-sm rounded-full shadow-lg hover:bg-white transition-all duration-300 border border-gray-200"
             >
               <svg
                 width="20"
@@ -164,7 +167,7 @@ export function Portfolio() {
             </button>
 
             {/* Image Grid */}
-            <div className="grid grid-cols-3 gap-8">
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-8">
               {currentContent.images.map((image, index) => (
                 <div
                   key={index}
@@ -182,7 +185,7 @@ export function Portfolio() {
             {/* Right Arrow */}
             <button
               onClick={nextTab}
-              className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-16 z-10 p-3 bg-white/80 backdrop-blur-sm rounded-full shadow-lg hover:bg-white transition-all duration-300 border border-gray-200"
+              className="hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 translate-x-6 lg:translate-x-16 z-10 p-3 bg-white/80 backdrop-blur-sm rounded-full shadow-lg hover:bg-white transition-all duration-300 border border-gray-200"
             >
               <svg
                 width="20"
