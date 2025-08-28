@@ -4,7 +4,6 @@ import { Hero } from "@/components/Hero";
 import { About } from "@/components/About";
 import { Nav } from "@/components/Nav";
 import { Portfolio } from "@/components/Portfolio";
-import { Contact } from "@/components/Contact";
 import { LoadingScreen } from "@/components/LoadingScreen";
 import { useState, useEffect } from "react";
 
@@ -29,7 +28,6 @@ export default function Home() {
         <Hero />
         <About />
         <Portfolio />
-        <Contact />
       </div>
     </div>
   );

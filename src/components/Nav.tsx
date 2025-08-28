@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { useState } from "react";
+import Link from "next/link";
 
 export function Nav() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -18,24 +19,7 @@ export function Nav() {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      if (sectionId === "contact") {
-        // For contact, scroll to the text content area but a bit lower
-        const contentElement = element.querySelector(".relative.z-10");
-        if (contentElement) {
-          const rect = contentElement.getBoundingClientRect();
-          const scrollTop = window.pageYOffset + rect.top - 150; // 150px offset from top
-          window.scrollTo({
-            top: scrollTop,
-            behavior: "smooth",
-          });
-        } else {
-          // Fallback to section if content element not found
-          element.scrollIntoView({
-            behavior: "smooth",
-            block: "start",
-          });
-        }
-      } else if (sectionId === "portfolio") {
+      if (sectionId === "portfolio") {
         // For portfolio, scroll a bit lower than start
         const rect = element.getBoundingClientRect();
         const scrollTop = window.pageYOffset + rect.top - 100; // 100px offset from top
@@ -160,7 +144,7 @@ export function Nav() {
             </div>
           </div>
 
-          {/* Bottom: Contact pinned */}
+          {/* Bottom: Contact Info */}
           <div className="pt-6 border-t border-white/10">
             <h3 className="text-white/60 text-sm font-medium uppercase tracking-wider mb-3">
               Contact
@@ -173,12 +157,6 @@ export function Nav() {
                 info@midwooddesignstudio.com
               </p>
               <p className="text-white/80 text-sm">+1 (555) 123-4567</p>
-              <button
-                onClick={() => scrollToSection("contact")}
-                className="mt-3 w-full text-center text-white/90 hover:text-white bg-white/10 hover:bg-white/20 border border-white/20 rounded-md py-2 transition-colors"
-              >
-                Go to Contact
-              </button>
             </div>
           </div>
         </div>

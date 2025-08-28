@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 
 interface TabContent {
   id: string;
@@ -169,16 +170,17 @@ export function Portfolio() {
             {/* Image Grid */}
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-8">
               {currentContent.images.map((image, index) => (
-                <div
+                <Link
                   key={index}
-                  className="aspect-square bg-gray-100 rounded-lg overflow-hidden border border-gray-200"
+                  href={`/portfolio/${currentContent.id}/${index + 1}`}
+                  className="aspect-square bg-gray-100 rounded-lg overflow-hidden border border-gray-200 hover:shadow-lg transition-all duration-300 cursor-pointer"
                 >
                   <img
                     src={image}
                     alt={`Portfolio image ${index + 1}`}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                   />
-                </div>
+                </Link>
               ))}
             </div>
 
