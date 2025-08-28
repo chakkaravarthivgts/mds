@@ -111,38 +111,37 @@ export function PortfolioLayout({
         </div>
       </div>
 
-            {/* Portfolio Navigation */}
+      {/* Portfolio Navigation */}
       <div className="max-w-[90rem] mx-auto px-6 py-16">
         <div className="flex flex-wrap items-center gap-4 sm:gap-8 justify-center">
-            <Link
-              href="/portfolio/interior-design"
-              className="text-sm sm:text-base tracking-wide transition-colors duration-200 text-white/60 hover:text-white"
-              style={{ fontFamily: "Helvetica, Arial, sans-serif" }}
-            >
-              INTERIOR DESIGN
-            </Link>
-            <Link
-              href="/portfolio/layout-planning"
-              className="text-sm sm:text-base tracking-wide transition-colors duration-200 text-white/60 hover:text-white"
-              style={{ fontFamily: "Helvetica, Arial, sans-serif" }}
-            >
-              LAYOUT PLANNING
-            </Link>
-            <Link
-              href="/portfolio/3d-modeling"
-              className="text-sm sm:text-base tracking-wide transition-colors duration-200 text-white/60 hover:text-white"
-              style={{ fontFamily: "Helvetica, Arial, sans-serif" }}
-            >
-              3D MODELING
-            </Link>
-            <Link
-              href="/portfolio/renderings"
-              className="text-sm sm:text-base tracking-wide transition-colors duration-200 text-white/60 hover:text-white"
-              style={{ fontFamily: "Helvetica, Arial, sans-serif" }}
-            >
-              RENDERINGS
-            </Link>
-          </div>
+          <Link
+            href="/portfolio/interior-design"
+            className="text-sm sm:text-base tracking-wide transition-colors duration-200 text-white/60 hover:text-white"
+            style={{ fontFamily: "Helvetica, Arial, sans-serif" }}
+          >
+            INTERIOR DESIGN
+          </Link>
+          <Link
+            href="/portfolio/layout-planning"
+            className="text-sm sm:text-base tracking-wide transition-colors duration-200 text-white/60 hover:text-white"
+            style={{ fontFamily: "Helvetica, Arial, sans-serif" }}
+          >
+            LAYOUT PLANNING
+          </Link>
+          <Link
+            href="/portfolio/3d-modeling"
+            className="text-sm sm:text-base tracking-wide transition-colors duration-200 text-white/60 hover:text-white"
+            style={{ fontFamily: "Helvetica, Arial, sans-serif" }}
+          >
+            3D MODELING
+          </Link>
+          <Link
+            href="/portfolio/renderings"
+            className="text-sm sm:text-base tracking-wide transition-colors duration-200 text-white/60 hover:text-white"
+            style={{ fontFamily: "Helvetica, Arial, sans-serif" }}
+          >
+            RENDERINGS
+          </Link>
         </div>
       </div>
     </div>
